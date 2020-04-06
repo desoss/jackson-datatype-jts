@@ -6,7 +6,7 @@
   <name>Jackson-datatype-jts</name>
   <description>Add-on module for Jackson (http://jackson.codehaus.org) to support JTS geometry types using
     the GeoJSON standard.</description>
-  <url>https://github.com/bedatadriven/jackson-datatype-jts/</url>
+  <url>https://github.com/desoss/jackson-datatype-jts</url>
 
   <licenses>
     <license>
@@ -18,10 +18,10 @@
   
   <developers>
     <developer>
-      <name>Alex Bertram</name>
-      <email>alex@bedatadriven.com</email>
-      <organization>BeDataDriven</organization>
-      <organizationUrl>https://bedatadriven.com</organizationUrl>
+      <name>Jacopo Rigoli</name>
+      <email>jacopo@rigoli.io</email>
+      <organization>rigoli.io</organization>
+      <organizationUrl>https://rigoli.io</organizationUrl>
       <timezone>Europe/Amsterdam</timezone>
       <roles>
         <role>Maintainer</role>
@@ -62,9 +62,9 @@
       <version>2.4.2</version>
     </dependency>
     <dependency>
-      <groupId>com.vividsolutions</groupId>
-      <artifactId>jts</artifactId>
-      <version>1.13</version>
+      <groupId>org.locationtech.jts</groupId>
+      <artifactId>jts-core</artifactId>
+      <version>1.16.1</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

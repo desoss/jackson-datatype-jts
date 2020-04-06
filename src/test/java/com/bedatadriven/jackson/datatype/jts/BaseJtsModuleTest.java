@@ -2,10 +2,10 @@ package com.bedatadriven.jackson.datatype.jts;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
 import org.junit.Before;
 import org.junit.Test;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
 
 import java.io.IOException;
 
@@ -13,9 +13,6 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**
- * Created by mihaildoronin on 11/11/15.
- */
 public abstract class BaseJtsModuleTest<T extends Geometry> {
     protected GeometryFactory gf = new GeometryFactory();
     private ObjectWriter writer;

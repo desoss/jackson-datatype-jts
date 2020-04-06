@@ -1,12 +1,10 @@
 package com.bedatadriven.jackson.datatype.jts;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryCollection;
 
-/**
- * Created by mihaildoronin on 11/11/15.
- */
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryCollection;
+
 public class GeometryCollectionParserTest extends BaseJtsModuleTest<GeometryCollection> {
     @Override
     protected Class<GeometryCollection> getType() {
@@ -20,8 +18,8 @@ public class GeometryCollectionParserTest extends BaseJtsModuleTest<GeometryColl
 
     @Override
     protected GeometryCollection createGeometry() {
-        return gf.createGeometryCollection(new Geometry[] {
-                gf.createPoint(new Coordinate(1.2345678, 2.3456789)) });
+        return gf.createGeometryCollection(new Geometry[]{
+                gf.createPoint(new Coordinate(1.2345678, 2.3456789))});
     }
 
 }
