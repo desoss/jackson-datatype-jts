@@ -164,24 +164,24 @@
                 </property>
             </activation>
             <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.kohsuke</groupId>
-                        <artifactId>pgp-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                                <phase>verify</phase>
-                                <configuration>
-                                    <secretkey>keyfile:${env.PGP_SECRETKEY_FILE}</secretkey>
-                                    <passphrase>literal:notasecret</passphrase>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
+                <!--<plugins>-->
+                    <!--<plugin>-->
+                        <!--<groupId>org.kohsuke</groupId>-->
+                        <!--<artifactId>pgp-maven-plugin</artifactId>-->
+                        <!--<executions>-->
+                            <!--<execution>-->
+                                <!--<goals>-->
+                                    <!--<goal>sign</goal>-->
+                                <!--</goals>-->
+                                <!--<phase>verify</phase>-->
+                                <!--<configuration>-->
+                                    <!--<secretkey>keyfile:${env.PGP_SECRETKEY_FILE}</secretkey>-->
+                                    <!--<passphrase>literal:notasecret</passphrase>-->
+                                <!--</configuration>-->
+                            <!--</execution>-->
+                        <!--</executions>-->
+                    <!--</plugin>-->
+                <!--</plugins>-->
             </build>
         </profile>
     </profiles>
