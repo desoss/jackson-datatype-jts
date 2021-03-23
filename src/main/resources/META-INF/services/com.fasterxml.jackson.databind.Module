@@ -1,1 +1,1 @@
-com.bedatadriven.jackson.datatype.jts.JtsModule
+com.desoss.jackson.datatype.jts.JtsModule
